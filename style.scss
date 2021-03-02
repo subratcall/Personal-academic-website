@@ -1,0 +1,870 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #164565;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #164565;
+  border-radius: 10px;
+}
+
+.preload {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 1000000;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(3, 64, 134);
+  animation: load-2 0.6s forwards 0.6s;
+}
+.preload h1 {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  font-size: calc(5rem + 0.5vw);
+  color: white;
+}
+.preload-2 {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 1000000000;
+  width: 100%;
+  height: 100%;
+  animation: load-1 0.6s forwards;
+  background-color: rgb(3, 64, 134);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 62.5%;
+  font-family: "Libre Baskerville", serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+//hero page
+#logo {
+  color: white;
+  font-size: calc(0.5rem + 1vw);
+  padding-left: 5rem;
+  min-width: 35rem;
+}
+#logo a {
+  text-decoration: none;
+  color: white;
+}
+#logo a:hover,
+#logo a:focus {
+  border-bottom: 2px solid #53c6f8;
+}
+header li {
+  display: flex;
+  align-items: center;
+}
+.menuham {
+  visibility: hidden;
+}
+.ham {
+  visibility: hidden;
+}
+
+header {
+  background-color: #164565;
+  box-shadow: 4px 9px 15px 1px rgba(0, 0, 0, 0.4);
+  display: flex;
+  z-index: 100;
+  position: relative;
+}
+nav {
+  min-height: 8vh;
+  align-items: center;
+  display: flex;
+  width: 95%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  font-size: calc(0.3rem + 0.8vw);
+  list-style: none;
+  color: white;
+}
+
+nav ul li a {
+  color: white;
+  padding-bottom: 1px;
+  text-decoration: none;
+}
+.navbar ul li a:hover,
+.navbar ul li a:focus {
+  border-bottom: 2px solid #53c6f8;
+}
+
+.hero {
+  background-color: #bcd9eb;
+  display: flex;
+  min-height: 92vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.hero-text {
+  flex: 3 1 30rem;
+  font-size: calc(0.2rem + 0.8vw);
+  align-self: center;
+  padding-left: 5rem;
+  text-align: justify;
+}
+.hero-jarek {
+  padding-right: 5rem;
+  align-self: center;
+  justify-content: center;
+  flex: 1 1 30rem;
+}
+.hero-img {
+  max-width: 50rem;
+  max-height: 40rem;
+  height: calc(70+0.1vh);
+  width: calc(60+0.1vh);
+  box-shadow: 5px 7px 10px 2px #252525;
+  border-radius: 3px;
+}
+.hero-text p {
+  padding-top: 4rem;
+}
+#first {
+  padding-top: 0;
+}
+
+//end of hero section
+
+//what i do section
+.what-i-do {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #bcd9eb;
+}
+
+.box-container {
+  min-height: 30vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.do-header {
+  text-align: center;
+  width: 100%;
+  font-size: calc(0.5rem + 1vw);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #122f5b;
+  color: white;
+  letter-spacing: 5px;
+  box-shadow: 4px 9px 15px 1px rgba(0, 0, 0, 0.4);
+}
+
+.box1,
+.box2,
+.box3 {
+  flex: 1 1 30rem;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem;
+  max-width: calc(30rem + 0.8vw);
+}
+.box1-top svg {
+  padding-right: 2rem;
+  padding-top: 2rem;
+}
+.box2-top svg {
+  padding-top: 4rem;
+}
+.box1-top,
+.box2-top,
+.box3-top {
+  background-color: #53c6f8;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  opacity: 0.8;
+  box-shadow: 5px 0 5px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 10px 10px 0 0;
+  max-height: calc(40rem + 0.8vw);
+}
+.box1-bottom,
+.box2-bottom,
+.box3-bottom {
+  background-color: #122f5b;
+
+  color: white;
+  font-size: calc(1.3rem + 0.2vw);
+  display: flex;
+  padding: 3rem;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  text-align: center;
+  box-shadow: 5px 0 5px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 0 0 10px 10px;
+}
+.box1-bottom h3,
+.box2-bottom h3,
+.box3-bottom h3 {
+  padding-bottom: 3rem;
+}
+
+.breakersecc {
+  height: 0.5vh;
+  animation: breaker 1s;
+  background-color: #164565;
+  z-index: 10;
+  position: relative;
+}
+
+.kariera {
+  text-align: center;
+  box-shadow: 4px 9px 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 1rem 1rem;
+  font-size: calc(0.5rem + 1vw);
+  background-color: #164565;
+  color: white;
+  letter-spacing: 5px;
+}
+
+//end of what i do section
+
+//timeline section
+
+.timeline {
+  background: linear-gradient(180deg, #bcd9eb, #122f5b);
+}
+.timeline {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  ul {
+    li {
+      list-style-type: none;
+      position: relative;
+      width: 5px;
+      margin: 0 auto;
+      padding-top: 5rem;
+      background: #164565;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 10rem;
+        transform: translateX(-50%) rotate(45deg);
+        width: 20px;
+        top: 150px;
+        height: 20px;
+        z-index: 2;
+        background: white;
+        overflow: hidden;
+      }
+      div {
+        position: relative;
+        bottom: 0;
+        width: 55rem;
+        height: 15rem;
+        margin-top: 4rem;
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 4px 9px 15px 1px rgba(255, 255, 255, 0.4);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        time {
+          position: absolute;
+          background: #f5af19;
+          width: 25rem;
+          font-size: calc(0.5rem + 0.8vw);
+          height: 3.5rem;
+          top: -15px;
+          border-radius: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          letter-spacing: 2px;
+        }
+        div {
+          height: 15rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          p {
+            text-align: center;
+          }
+        }
+      }
+      &:nth-of-type(odd) {
+        > div {
+          left: 3rem;
+        }
+      }
+      &:nth-of-type(even) {
+        > div {
+          left: -58rem;
+        }
+      }
+    }
+  }
+}
+.timeline-box .text p {
+  font-size: calc(0.5rem + 0.8vw);
+}
+.timeline {
+  img {
+    width: 190px;
+    height: 160px;
+  }
+}
+
+.timeline {
+  .ap-img {
+    width: 190px;
+    height: 160px;
+    padding-bottom: 0;
+  }
+  .apion-img {
+    width: 190px;
+    height: 150px;
+    padding-bottom: 0rem;
+  }
+  .whsz-img {
+    width: 180px;
+    height: 160px;
+    padding-bottom: 1rem;
+  }
+  .wsaib-img {
+    padding-bottom: 2.5rem;
+  }
+  .ug-img {
+    width: 190px;
+    height: 160px;
+    padding-bottom: 1rem;
+  }
+  .łebska-img {
+    height: 150px;
+  }
+  .bukowo-img {
+    height: 120px;
+  }
+}
+
+//animations for timeline
+.timeline {
+  ul {
+    li {
+      div {
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.7s ease-in-out;
+      }
+      &:nth-of-type(odd) {
+        div {
+          transform: translate3d(80px, -10px, 0) rotatez(15deg);
+        }
+      }
+      &:nth-of-type(even) {
+        div {
+          transform: translate3d(-80px, -10px, 0) rotatez(15deg);
+        }
+      }
+      &.in-view {
+        div {
+          transform: none;
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+/*
+Used for timeline
+
+Copyright (c) 2021 by januaryofmine (https://codepen.io/januaryofmine/pen/pYMLwg)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+.text a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+//footer
+footer {
+  background: #122f5b;
+  height: 7vh;
+  position: relative;
+  display: flex;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(0.5rem + 0.5vw);
+  flex-direction: column;
+}
+footer {
+  p {
+    color: white;
+
+    font-size: calc(0.5rem + 0.5vw);
+  }
+  h3 {
+    color: white;
+
+    font-size: calc(0.5rem + 0.5vw);
+  }
+}
+#counter {
+  padding-top: 1rem;
+}
+
+footer small {
+  color: white;
+}
+//dorobek
+
+.list-dorobek {
+  display: flex;
+  flex-direction: column;
+
+  margin: 2rem 4rem 2rem 4rem;
+  font-size: calc(0.5rem + 0.5vw);
+  line-height: calc(1rem + 1vw);
+}
+.dorobek {
+  background-color: #bcd9eb;
+  height: 100%;
+}
+.dorobek h2 {
+  text-align: center;
+  padding-top: 5rem;
+  font-size: calc(1rem + 2vw);
+  padding-bottom: 5rem;
+  border-bottom: calc(0.5vh) solid #122f5b;
+}
+.dorobek h4 {
+  padding-top: 5rem;
+  font-size: calc(0.5rem + 1vw);
+  padding-left: 2.5rem;
+}
+
+.list-dorobek a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+#dorobek-hero {
+  background-color: #bcd9eb;
+}
+//specjalizacje
+
+.list-specjalizacje {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 4rem 2rem 4rem;
+  font-size: calc(0.5rem + 0.5vw);
+  line-height: calc(1rem + 1vw);
+}
+
+.specjalizacje {
+  background-color: #bcd9eb;
+  min-height: 100%;
+}
+.specjalizacje h2 {
+  text-align: center;
+  padding-top: 5rem;
+  font-size: calc(1rem + 2vw);
+  padding-bottom: 5rem;
+  border-bottom: calc(0.5vh) solid #122f5b;
+  font-weight: bold;
+}
+.specjalizacje h4 {
+  padding-top: 5rem;
+  font-size: calc(0.5rem + 1vw);
+  padding-left: 2.5rem;
+}
+.specjalizacje h5 {
+  padding-top: 2rem;
+  font-size: calc(0.5rem + 0.5vw);
+  padding-left: 2.5rem;
+}
+
+#specjalizacje-hero {
+  background-color: #bcd9eb;
+  min-height: 150vh;
+}
+//praktyka
+.list-praktyka {
+  margin: 2rem 4rem 2rem 4rem;
+  font-size: calc(0.5rem + 0.5vw);
+  line-height: calc(1rem + 1vw);
+}
+.praktyka {
+  background-color: #bcd9eb;
+  height: 100%;
+}
+.praktyka h2 {
+  text-align: center;
+  padding-top: 5rem;
+  font-size: calc(1rem + 2vw);
+  padding-bottom: 5rem;
+  border-bottom: calc(0.5vh) solid #122f5b;
+}
+.praktyka h3 {
+  padding-top: 5rem;
+  font-size: calc(0.5rem + 1vw);
+  padding-left: 2.5rem;
+}
+.praktyka h4 {
+  padding-top: 2rem;
+  font-size: calc(0.5rem + 0.8vw);
+  padding-left: 2.5rem;
+}
+
+.praktyka p {
+  font-size: calc(0.4rem + 0.6vw);
+  padding-left: 2.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#praktyka-hero {
+  background-color: #bcd9eb;
+  height: 100%;
+}
+//konferencje
+
+.list-konferencje {
+  margin: 2rem 4rem 2rem 4rem;
+  font-size: calc(0.5rem + 0.5vw);
+  line-height: calc(1rem + 1vw);
+}
+.konferencje {
+  background-color: #bcd9eb;
+  height: 100%;
+}
+.konferencje h2 {
+  text-align: center;
+  padding-top: 5rem;
+  font-size: calc(1rem + 2vw);
+  padding-bottom: 5rem;
+  border-bottom: calc(0.5vh) solid #122f5b;
+}
+.konferencje h4 {
+  padding-top: 5rem;
+  font-size: calc(0.5rem + 1vw);
+  padding-left: 2.5rem;
+}
+
+.list-konferencje tr:nth-child(even) {
+  background-color: #122f5b;
+  color: white;
+}
+.list-konferencje tr:nth-child(odd) {
+  background-color: #53c6f8;
+  color: black;
+}
+.list-konferencje tr:hover {
+  background-color: rgb(100, 133, 226);
+}
+#konferencje-hero {
+  background-color: #bcd9eb;
+  height: 100%;
+}
+.list-konferencje td {
+  padding: calc(2rem + 1vw);
+  border-radius: 5px;
+}
+//kontakt
+
+#kontakt {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+}
+
+.kontakt-klasa {
+  background-color: #bcd9eb;
+  height: 90vh;
+}
+#kontakt h2 {
+  text-align: center;
+  padding-top: 5rem;
+  font-size: calc(1rem + 2vw);
+  padding-bottom: 5rem;
+  border-bottom: calc(0.5vh) solid #122f5b;
+}
+#kontakt p {
+  font-size: calc(0.5rem + 1vw);
+  color: white;
+}
+.kontakt-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 75vh;
+}
+.icons {
+  padding: 5rem;
+}
+
+.personal,
+.phone,
+.email {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 10rem;
+
+  background-color: #122f5b;
+  border-radius: 10px;
+  margin: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+.contact-svgs {
+  width: 10rem;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(306deg)
+    brightness(103%) contrast(101%);
+}
+.text-inside {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 15rem;
+  padding-bottom: 3rem;
+}
+//galeria
+.gallery h2 {
+  text-align: center;
+  padding-top: 5rem;
+  font-size: calc(1rem + 2vw);
+  padding-bottom: 5rem;
+  border-bottom: calc(0.5vh) solid #122f5b;
+}
+
+.gallery {
+  background-color: #bcd9eb;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+footer {
+  overflow-x: hidden;
+}
+.gallery img {
+  max-height: 70vh;
+  max-width: 50rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+#carouselExampleControls {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  max-width: 50rem;
+  margin: auto;
+}
+
+// ANIMATIONS FOR BOXES in what i do section
+
+@keyframes dots-disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes move-bottom {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-50px);
+  }
+}
+@keyframes move-middle {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(190px);
+  }
+}
+@keyframes move-top {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-150px);
+  }
+}
+@keyframes move-head {
+  0% {
+    transform: rotatez(0);
+  }
+  100% {
+    transform: rotatez(15deg);
+  }
+}
+
+#dots-top,
+#dots-middle,
+#dots-bottom {
+  animation: dots-disappear ease-out 2s 0.8s forwards alternate;
+}
+#top {
+  animation: move-top ease-in-out 1.8s 1s infinite alternate;
+}
+#middle {
+  animation: move-middle ease-in-out 1.8s 1s infinite alternate;
+}
+#bottom {
+  animation: move-bottom ease-in-out 1.8s 1s infinite alternate;
+}
+
+#head {
+  animation: move-head ease-in-out 1.8s 1s infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#arm {
+  animation: arm-move 3s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#drawing {
+  animation: drawing-appear 3s ease-in infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes arm-move {
+  0% {
+    transform: rotateZ(0deg) translateX(0px) translateY(0);
+  }
+
+  100% {
+    transform: translateX(21px) translateY(-34px) rotatez(-60deg);
+  }
+}
+@keyframes drawing-appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes text-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes move-paper-left {
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+  100% {
+    transform: translateY(-70px) translateX(-135px);
+  }
+}
+@keyframes move-paper-right {
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+  100% {
+    transform: translateY(50px) translateX(90px);
+  }
+}
+
+#text-left-top {
+  animation: text-appear 3.1s ease-in-out infinite alternate;
+}
+#text-left-bottom {
+  animation: text-appear 3.1s 1s ease-in-out infinite alternate;
+}
+#text-right-top {
+  animation: text-appear 3.1s ease-in-out infinite alternate;
+}
+#text-right-bottom {
+  animation: text-appear 3.1s 1s ease-in-out infinite alternate;
+}
+#paper-right {
+  animation: move-paper-left 2.5s 1.5s ease-in-out infinite alternate;
+}
+#paper-left {
+  animation: move-paper-right 2.5s 1.5s ease-in-out infinite alternate;
+}
+
+//end of what i do animations
+//preload
+@keyframes load-1 {
+  0% {
+    transform: translatex(0);
+    opacity: 0.7;
+    background-color: rgb(3, 64, 134);
+  }
+  100% {
+    transform: translatex(-100%);
+    opacity: 0;
+    background-color: rgb(112, 218, 218);
+    visibility: hidden;
+  }
+}
+@keyframes load-2 {
+  0% {
+    transform: translatey(0);
+    opacity: 0.7;
+    background-color: rgb(6, 38, 46);
+  }
+  100% {
+    transform: translatey(100%);
+    opacity: 0;
+    background-color: rgb(112, 218, 218);
+    visibility: hidden;
+  }
+}
