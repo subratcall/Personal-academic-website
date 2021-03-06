@@ -6,3 +6,7 @@ Its mobile responsive, scallable etc. Where pictures were i added "your-img" tex
 Code is not that clear and pretty but im like beginner in this kind of stuff, so sorry for that.
 
 You can visit site: www.szrederjaroslaw.pl
+
+https://github.com/mmaatii1/Personal-academic-website/blob/main/jarek.gif
+
+![short preview of site](https://github.com/mmaatii1/Personal-academic-website/blob/main/jarek.gif)
